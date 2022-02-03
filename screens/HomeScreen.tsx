@@ -4,14 +4,17 @@ import { Text, View, StyleSheet } from "react-native";
 import CountryFlag from "react-native-country-flag";
 import SearchBar from "./SearchBar";
 import ChooseCountry from "../components/CountryName";
-import AddCountry from "../components/AddCountry";
+import CountryDetails from "../components/CountryDetails";
 
 const HomeScreen = () => {
   // const tailwind = useTailwind();
   return (
     <View style={styles.header}>
       <Text style={styles.text}> GO ABROAD </Text>
-      <Text>Choose the country of your dreams here ...</Text>
+      <Text style={styles.subText}>
+        Choose the country of your dreams here ...
+      </Text>
+      <CountryDetails />
     </View>
   );
 };
@@ -19,12 +22,17 @@ const HomeScreen = () => {
 const styles = StyleSheet.create({
   header: {
     marginTop: 10,
-    padding: 25,
+    padding: 15,
   },
   text: {
     fontSize: 30,
     fontWeight: "bold",
     color: "red",
+  },
+  subText: {
+    fontSize: 16,
+    padding: 5,
+    margin: 5,
   },
 });
 

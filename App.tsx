@@ -1,12 +1,9 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import AddCountry from "./components/AddCountry";
-import ChooseCountry from "./components/CountryName";
+import { StyleSheet } from "react-native";
+import CountryDetails from "./components/CountryDetails";
 import Details from "./screens/DetailsScreen";
-import Hello from "./screens/HomeScreen";
 import HomeScreen from "./screens/HomeScreen";
 
 // move the stack
@@ -17,6 +14,7 @@ function MainStackNavigator() {
     <Stack.Navigator initialRouteName="HomeScreen">
       <Stack.Screen name={"Home"} component={HomeScreen} />
       <Stack.Screen name={"Details"} component={Details} />
+      <Stack.Screen name={"Country"} component={CountryDetails} />
     </Stack.Navigator>
   );
 }

@@ -16,14 +16,12 @@ const ChooseCountry: FC<CountryDetails> = ({ name, isoCode }) => {
   // const navigation = useNavigation();
 
   return (
-    <NavigationContainer>
-      <View style={styles.card}>
-        <TouchableOpacity style={styles.card} onPress={() => ""}>
-          <CountryFlag isoCode={isoCode} size={25} />
-          <Text>{name}</Text>
-        </TouchableOpacity>
-      </View>
-    </NavigationContainer>
+    <View style={styles.card}>
+      <TouchableOpacity style={styles.card} onPress={() => ""}>
+        <CountryFlag isoCode={isoCode} size={25} />
+        <Text>{name}</Text>
+      </TouchableOpacity>
+    </View>
   );
 };
 

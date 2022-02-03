@@ -2,7 +2,7 @@ import React from "react";
 import ChooseCountry from "./CountryName";
 import { View } from "react-native";
 
-const AddCountry = () => {
+const CountryDetails = () => {
   return (
     <View>
       <ChooseCountry name="Germany" isoCode="de" />
@@ -13,4 +13,4 @@ const AddCountry = () => {
   );
 };
 
-export default AddCountry;
+export default CountryDetails;
