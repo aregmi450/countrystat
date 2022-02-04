@@ -1,13 +1,13 @@
-import React, { FC } from "react";
-import { Text, View, StyleSheet, Button, Linking } from "react-native";
+import React from "react";
+import { View, Button, Linking } from "react-native";
 import Constant from "../components/Constants";
-import EntryRequirement from "../components/EntryRequire";
+import Details from "../components/Links";
 
-const Details = () => {
+const DetailsScreen = () => {
   return (
     <View>
       <Constant headline="Entry Requirements" />
-      <EntryRequirement />
+      <Details />
 
       <Constant headline="Useful Links for Future Students " />
       <Button
@@ -29,4 +29,4 @@ const Details = () => {
   );
 };
 
-export default Details;
+export default DetailsScreen;

@@ -1,16 +1,19 @@
-import React from "react";
+import React, { FC } from "react";
 import { Text, View, StyleSheet } from "react-native";
 
-const EntryRequirement = () => {
+type CountryRequirements = {
+  headline: string;
+  description: string;
+};
+
+const EntryRequirement: FC<CountryRequirements> = ({
+  headline,
+  description,
+}) => {
   return (
     <View>
-      <Text style={styles.textHeader}>
-        Admission Letter From German University
-      </Text>
-      <Text style={styles.textdescription}>
-        You can get the application letter from the university after applying
-        via their application portal.
-      </Text>
+      <Text style={styles.textHeader}>{headline}</Text>
+      <Text style={styles.textdescription}>{description}</Text>
     </View>
   );
 };
