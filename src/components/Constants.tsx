@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
     color: "red",
     fontWeight: "bold",
     margin: 2,
+    fontSize: 24,
   },
 });
 export default Constant;

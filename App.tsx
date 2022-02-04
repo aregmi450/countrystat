@@ -4,6 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import HomeScreen from "./src/screens/HomeScreen";
 import Details from "./src/screens/DetailsScreen";
 import CountryDetails from "./src/components/CountryDetails";
+import EntryRequirement from "./src/components/EntryRequire";
 // move the stack
 const Stack = createStackNavigator();
 
@@ -11,8 +12,9 @@ function MainStackNavigator() {
   return (
     <Stack.Navigator initialRouteName="HomeScreen">
       <Stack.Screen name={"Home"} component={HomeScreen} />
-      <Stack.Screen name={"Details"} component={Details} />
+      <Stack.Screen name={"Detail"} component={Details} />
       <Stack.Screen name={"Country"} component={CountryDetails} />
+      <Stack.Screen name={"Entry"} component={EntryRequirement} />
     </Stack.Navigator>
   );
 }
