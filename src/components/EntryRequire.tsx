@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { Text, View, StyleSheet } from "react-native";
+import CountryFlag from "react-native-country-flag";
 
 type CountryRequirements = {
   headline: string;
@@ -21,12 +22,12 @@ const EntryRequirement: FC<CountryRequirements> = ({
 const styles = StyleSheet.create({
   textHeader: {
     marginTop: 5,
-    padding: 10,
+    padding: 5,
     fontSize: 20,
   },
   textdescription: {
     marginTop: 5,
-    padding: 15,
+    padding: 10,
     fontSize: 18,
     color: "black",
   },

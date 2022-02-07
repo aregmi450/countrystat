@@ -1,5 +1,11 @@
 import React, { FC } from "react";
-import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
+import {
+  Text,
+  View,
+  StyleSheet,
+  TouchableOpacity,
+  FlatList,
+} from "react-native";
 import { useTailwind } from "tailwind-rn";
 import CountryFlag from "react-native-country-flag";
 import { useNavigation } from "@react-navigation/native";
@@ -10,7 +16,7 @@ type CountryDetails = {
 };
 
 const ChooseCountry: FC<CountryDetails> = ({ name, isoCode }) => {
-  const tailwind = useTailwind();
+  // const tailwind = useTailwind();
   const navigation = useNavigation();
 
   return (

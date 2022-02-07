@@ -1,9 +1,5 @@
-import React, { FC } from "react";
-import { useTailwind } from "tailwind-rn/dist";
+import React from "react";
 import { Text, View, StyleSheet } from "react-native";
-import CountryFlag from "react-native-country-flag";
-import SearchBar from "./SearchBar";
-import ChooseCountry from "../components/CountryName";
 import CountryDetails from "../components/CountryDetails";
 
 const HomeScreen = () => {
