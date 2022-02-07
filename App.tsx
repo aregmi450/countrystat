@@ -5,6 +5,7 @@ import HomeScreen from "./src/screens/HomeScreen";
 import CountryDetails from "./src/components/CountryDetails";
 import EntryRequirement from "./src/components/EntryRequire";
 import DetailsScreen from "./src/screens/DetailsScreen";
+import ContactScreen from "./src/screens/ContactScreen";
 // move the stack
 const Stack = createStackNavigator();
 
@@ -15,6 +16,7 @@ function MainStackNavigator() {
       <Stack.Screen name={"Detail"} component={DetailsScreen} />
       <Stack.Screen name={"Country"} component={CountryDetails} />
       <Stack.Screen name={"Entry"} component={EntryRequirement} />
+      <Stack.Screen name={"Contact"} component={ContactScreen} />
     </Stack.Navigator>
   );
 }

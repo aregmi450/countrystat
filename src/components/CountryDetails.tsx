@@ -11,6 +11,7 @@ const CountryDetails = () => {
       <ChooseCountry name="USA" isoCode="us" />
       <ChooseCountry name="Canada" isoCode="ca" />
       <ChooseCountry name="Australia" isoCode="au" />
+      <ChooseCountry name="Japan" isoCode="jp" />
     </View>
   );
 };
