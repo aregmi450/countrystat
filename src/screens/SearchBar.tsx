@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import View from "react-native";
+import { View, StyleSheet } from "react-native";
 import { Searchbar } from "react-native-paper";
+import { black } from "react-native-paper/lib/typescript/styles/colors";
 
 export type query = string;
 const Search = () => {
@@ -9,12 +10,25 @@ const Search = () => {
   const onChangeSearch = (query) => setSearchQuery(query);
 
   return (
-    <Searchbar
-      placeholder="Search your dream destination"
-      onChangeText={onChangeSearch}
-      value={searchQuery}
-    />
+    <View style={styles.container}>
+      <Searchbar
+        placeholder="Search your dream destination"
+        onChangeText={onChangeSearch}
+        value={searchQuery}
+        style={styles.searchBar}
+      />
+    </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    padding: 5,
+  },
+  searchBar: {
+    borderRadius: 5,
+    borderColor: "black",
+  },
+});
 
 export default Search;
