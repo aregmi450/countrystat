@@ -1,12 +1,14 @@
 import React from "react";
-import { View, Button, Linking } from "react-native";
+import { View, Button, Linking, Dimensions, StyleSheet } from "react-native";
 import Constant from "../components/Constants";
 import EntryRequirement from "../components/EntryRequire";
 import Details from "../components/Links";
 
+const { width, height } = Dimensions.get("screen");
+
 const DetailsScreen = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Constant headline="Entry Requirements" />
       <Details />
 
@@ -41,5 +43,12 @@ const DetailsScreen = () => {
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    width: width,
+    height: height * 0.5,
+  },
+});
 
 export default DetailsScreen;
