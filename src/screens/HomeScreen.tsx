@@ -1,15 +1,11 @@
-import { NavigationContainer, useNavigation } from "@react-navigation/native";
 import React from "react";
-import { Text, View, StyleSheet, Button, Pressable } from "react-native";
-import { TouchableOpacity } from "react-native-gesture-handler";
+import { Text, View, StyleSheet } from "react-native";
 import { useTailwind } from "tailwind-rn";
-import IButton from "../components/Button";
 import CountryDetails from "../components/CountryDetails";
 import Search from "../components/SearchBar";
 
 const HomeScreen = () => {
-  const tailwind = useTailwind();
-  const navigation = useNavigation();
+  // const tailwind = useTailwind();
   return (
     <View style={styles.header}>
       {/* <View style={tailwind("mt-10 p-15")}> */}
@@ -19,7 +15,6 @@ const HomeScreen = () => {
       </Text>
       <Search />
       <CountryDetails />
-      <IButton />
     </View>
   );
 };
