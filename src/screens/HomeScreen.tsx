@@ -1,6 +1,7 @@
 import React from "react";
 import { Text, View, StyleSheet } from "react-native";
 import CountryDetails from "../components/CountryDetails";
+import Search from "./SearchBar";
 
 const HomeScreen = () => {
   // const tailwind = useTailwind();
@@ -10,6 +11,7 @@ const HomeScreen = () => {
       <Text style={styles.subText}>
         Choose the country of your dreams here ...
       </Text>
+      <Search />
       <CountryDetails />
     </View>
   );
