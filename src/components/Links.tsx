@@ -1,21 +1,44 @@
-import React from "react";
-import EntryRequirement from "./EntryRequire";
-import { View } from "react-native";
+import React, { FC } from "react";
+import { Linking, Text, View, StyleSheet } from "react-native";
+import { TouchableOpacity } from "react-native-gesture-handler";
 
-const Details = () => {
+type Links = {
+  url: string;
+  title: string;
+};
+
+const Links: FC<Links> = ({ url, title }) => {
   return (
     <View>
-      <EntryRequirement
-        headline="Admission Letter From German University"
-        description=" You can get the application letter from the university after applying
-        via their application portal."
-      />
-      <EntryRequirement
-        headline="Valid Student Visa "
-        description=" A valid student visa issued from the governemnt of Germany."
-      />
+      <TouchableOpacity onPress={() => Linking.openURL(url)}>
+        <Text style={styles.button}>{title}</Text>
+      </TouchableOpacity>
     </View>
   );
 };
 
-export default Details;
+const styles = StyleSheet.create({
+  button: {
+    fontWeight: "700",
+    color: "teal",
+    padding: 2,
+    margin: 5,
+  },
+});
+
+// export default Links;
+
+// export  LinkSection;
+
+export default Links;
+
+/* //   <Button
+        onPress={() =>
+          Linking.openURL(
+            "https://kathmandu.diplo.de/np-en/service/01-VisaEinreise/-/2225320"
+          )
+        }
+        title="German Embassy for Studying Visa"
+        color="teal"
+      /> */
+// }
