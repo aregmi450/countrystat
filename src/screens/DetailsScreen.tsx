@@ -64,7 +64,8 @@ const DetailsScreen = () => {
 const styles = StyleSheet.create({
   container: {
     width: width,
-    height: height,
+    height: height * 0.8,
+    paddingBottom: 5,
   },
 });
 
