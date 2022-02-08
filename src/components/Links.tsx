@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     color: "teal",
     padding: 2,
-    margin: 5,
+    margin: 3,
   },
 });
 
