@@ -1,5 +1,12 @@
 import React from "react";
-import { View, Button, Linking, Dimensions, StyleSheet } from "react-native";
+import {
+  View,
+  Button,
+  Linking,
+  Dimensions,
+  StyleSheet,
+  ScrollView,
+} from "react-native";
 import Constant from "../components/Constants";
 import Language from "../components/Language";
 import Details from "../components/BasicRequirements";
@@ -10,7 +17,7 @@ const { width, height } = Dimensions.get("screen");
 
 const DetailsScreen = () => {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <Constant headline="Entry Requirements" />
       <Details />
       <Constant headline="Useful Links for Future Students " />
@@ -50,7 +57,7 @@ const DetailsScreen = () => {
         title="EduPark Nepal"
         color="teal"
       /> */}
-    </View>
+    </ScrollView>
   );
 };
 
