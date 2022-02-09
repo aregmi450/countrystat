@@ -1,10 +1,10 @@
 import React from "react";
-import { View, StyleSheet, ScrollView } from "react-native";
+import { View } from "react-native";
 import Links from "./Links";
 
 const LinkSection = () => {
   return (
-    <ScrollView>
+    <View>
       <Links
         url="https://kathmandu.diplo.de/np-en/service/01-VisaEinreise/-/2225320"
         title="German Embassy Nepal"
@@ -17,7 +17,7 @@ const LinkSection = () => {
         url="https://www.studying-in-germany.org/"
         title="Studying in Germany"
       />
-    </ScrollView>
+    </View>
   );
 };
 

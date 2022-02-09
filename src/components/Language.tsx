@@ -6,8 +6,6 @@ import EntryRequirement from "./EntryRequire";
 const Language = () => {
   return (
     <View>
-      <Constant headline="Language Requirements" />
-
       <EntryRequirement
         headline="Native Language"
         description="You need to complete two levels of German language which you can do after reaching the destination too."

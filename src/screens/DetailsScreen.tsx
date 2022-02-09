@@ -12,16 +12,21 @@ import Language from "../components/Language";
 import Details from "../components/BasicRequirements";
 import LinkSection from "../components/LinkSection";
 import Links from "../components/Links";
+import { TouchableOpacity } from "react-native-gesture-handler";
+import CollapseSection from "../components/Collapsible";
 
 const { width, height } = Dimensions.get("screen");
 
 const DetailsScreen = () => {
   return (
     <ScrollView style={styles.container}>
+      <CollapseSection />
+
+      {/* 
       <Constant headline="Entry Requirements" />
       <Details />
       <Constant headline="Useful Links for Future Students " />
-      <LinkSection />
+      <LinkSection /> */}
       {/* <Button
         onPress={() =>
           Linking.openURL(
@@ -31,14 +36,13 @@ const DetailsScreen = () => {
         title="German Embassy for Studying Visa"
         color="teal"
       /> */}
-      <Language />
 
-      <Constant headline="Place to study German Language" />
+      {/* <Language /> */}
 
-      <Links
+      {/* <Links
         url="https://www.goethe-kathmandu.edu.np/"
         title="Goethe Institute"
-      />
+      /> */}
 
       {/* <Button
         onPress={() => Linking.openURL("https://www.goethe-kathmandu.edu.np/")}
@@ -46,10 +50,10 @@ const DetailsScreen = () => {
         color="teal"
       /> */}
 
-      <Links
+      {/* <Links
         url="https://www.edupark.com.np/german-language-courses"
         title="EduPark Nepal"
-      />
+      /> */}
       {/* <Button
         onPress={() =>
           Linking.openURL("https://www.edupark.com.np/german-language-courses")

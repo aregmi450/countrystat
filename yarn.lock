@@ -5088,6 +5088,11 @@
     "jscodeshift" "^0.11.0"
     "nullthrows" "^1.1.1"
 
+"react-native-collapsible@^1.6.0":
+  "integrity" "sha512-beZjdgbT9Y/Pg591Xy5XkKG20HffJiVad4n9bfcUF/f783A+tvOVXnqvbS58Lkaym93mi4jcDPMuW9Vc1t6rqg=="
+  "resolved" "https://registry.npmjs.org/react-native-collapsible/-/react-native-collapsible-1.6.0.tgz"
+  "version" "1.6.0"
+
 "react-native-country-flag@^1.1.4":
   "integrity" "sha512-rwWPJtQxPNJbyInDVhNo3EYaT/jbU5DxWE52sYTg9o8emNmuM1vyMXyRexVtuFtQs/7mQh/RK39J3+pI+OTnBA=="
   "resolved" "https://registry.npmjs.org/react-native-country-flag/-/react-native-country-flag-1.1.4.tgz"
