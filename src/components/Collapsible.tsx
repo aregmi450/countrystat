@@ -3,7 +3,6 @@ import { View } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import Collapsible from "react-native-collapsible";
 import Details from "./BasicRequirements";
-import Links from "./Links";
 import LinkSection from "./LinkSection";
 import Constant from "./Constants";
 import Language from "./Language";
