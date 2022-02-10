@@ -21,8 +21,8 @@ const styles = StyleSheet.create({
   button: {
     fontWeight: "700",
     color: "teal",
-    padding: 2,
-    margin: 3,
+    padding: 3,
+    margin: 5,
   },
 });
 

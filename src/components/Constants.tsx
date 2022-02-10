@@ -30,14 +30,15 @@ const styles = StyleSheet.create({
   border: {
     borderRadius: 5,
     borderColor: "black",
-    paddingBottom: 2,
-    paddingTop: 2,
+    paddingBottom: 5,
+    paddingTop: 5,
+    marginStart: 5,
   },
   textStyle: {
     padding: 2,
     color: "black",
     fontWeight: "bold",
-    margin: 2,
+    margin: 5,
     fontSize: 18,
     backgroundColor: "lightseagreen",
   },

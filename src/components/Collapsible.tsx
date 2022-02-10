@@ -7,6 +7,7 @@ import LinkSection from "./LinkSection";
 import Constant from "./Constants";
 import Language from "./Language";
 import LanguageLink from "./LanguageLinks";
+import CollapseWindow from "./CollapsibleData";
 
 const CollapseSection = () => {
   const [collapsed, setCollapsed] = useState(true);
@@ -17,14 +18,33 @@ const CollapseSection = () => {
 
   return (
     <View>
-      <TouchableOpacity onPress={toggleExpanded}>
+      {/* <TouchableOpacity onPress={toggleExpanded}>
         <Constant headline="Entry Requirements" />
         <Collapsible collapsed={collapsed} align="top">
           <Details />
         </Collapsible>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
 
-      <TouchableOpacity onPress={toggleExpanded}>
+      <CollapseWindow
+        headline="Entry Requirements"
+        componentName={<Details />}
+      />
+      <CollapseWindow
+        headline="Useful Links for Students"
+        componentName={<LinkSection />}
+      />
+
+      <CollapseWindow
+        headline="Language Requirements"
+        componentName={<Language />}
+      />
+
+      <CollapseWindow
+        headline="Places to Study Native Language"
+        componentName={<LanguageLink />}
+      />
+
+      {/* <TouchableOpacity onPress={toggleExpanded}>
         <Constant headline="Useful Links for Future Students " />
         <Collapsible collapsed={collapsed} align="top">
           <LinkSection />
@@ -40,10 +60,10 @@ const CollapseSection = () => {
 
       <TouchableOpacity onPress={toggleExpanded}>
         <Constant headline="Places to Study Native Language" />
-      </TouchableOpacity>
-      <Collapsible collapsed={collapsed} align="top">
-        <LanguageLink />
-      </Collapsible>
+        <Collapsible collapsed={collapsed} align="top">
+          <LanguageLink />
+        </Collapsible>
+      </TouchableOpacity> */}
     </View>
   );
 };

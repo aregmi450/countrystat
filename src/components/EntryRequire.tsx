@@ -23,11 +23,13 @@ const styles = StyleSheet.create({
     marginTop: 5,
     padding: 5,
     fontSize: 20,
+    color: "teal",
+    fontWeight: "700",
   },
   textdescription: {
     marginTop: 5,
     padding: 5,
-    fontSize: 16,
+    fontSize: 18,
     color: "black",
   },
 });
