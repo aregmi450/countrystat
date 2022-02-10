@@ -1,13 +1,12 @@
 import React, { FC } from "react";
 import { Text, View, StyleSheet } from "react-native";
-import { blue200 } from "react-native-paper/lib/typescript/styles/colors";
 import { useTailwind } from "tailwind-rn";
 
 type Topic = {
   headline: string;
 };
 const Constant: FC<Topic> = ({ headline }) => {
-  const tailwind = useTailwind();
+  // const tailwind = useTailwind();
 
   return (
     <View style={styles.border}>
@@ -26,11 +25,12 @@ const styles = StyleSheet.create({
   },
   textStyle: {
     padding: 2,
-    color: "white",
+    color: "black",
     fontWeight: "bold",
     margin: 2,
-    fontSize: 24,
-    backgroundColor: "black",
+    fontSize: 18,
+    textAlign: "left",
+    backgroundColor: "lightseagreen",
   },
 });
 export default Constant;
