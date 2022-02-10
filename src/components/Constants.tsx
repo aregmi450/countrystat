@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { Text, View, StyleSheet } from "react-native";
 import { useTailwind } from "tailwind-rn";
+import { Entypo } from "@expo/vector-icons";
 
 type Topic = {
   headline: string;
@@ -11,7 +12,16 @@ const Constant: FC<Topic> = ({ headline }) => {
   return (
     <View style={styles.border}>
       {/* <Text style={tailwind("p-2 text-white font-bold")}>{headline}</Text> */}
-      <Text style={styles.textStyle}>{headline} </Text>
+
+      <Text style={styles.textStyle}>
+        {headline}
+        <Entypo
+          name="chevron-down"
+          size={24}
+          color="black"
+          style={styles.icon}
+        />
+      </Text>
     </View>
   );
 };
@@ -29,8 +39,10 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     margin: 2,
     fontSize: 18,
-    textAlign: "left",
     backgroundColor: "lightseagreen",
+  },
+  icon: {
+    alignSelf: "flex-end",
   },
 });
 export default Constant;

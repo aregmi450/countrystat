@@ -19,24 +19,24 @@ const CollapseSection = () => {
     <View>
       <TouchableOpacity onPress={toggleExpanded}>
         <Constant headline="Entry Requirements" />
+        <Collapsible collapsed={collapsed} align="top">
+          <Details />
+        </Collapsible>
       </TouchableOpacity>
-      <Collapsible collapsed={collapsed} align="top">
-        <Details />
-      </Collapsible>
 
       <TouchableOpacity onPress={toggleExpanded}>
         <Constant headline="Useful Links for Future Students " />
+        <Collapsible collapsed={collapsed} align="top">
+          <LinkSection />
+        </Collapsible>
       </TouchableOpacity>
-      <Collapsible collapsed={collapsed} align="top">
-        <LinkSection />
-      </Collapsible>
 
       <TouchableOpacity onPress={toggleExpanded}>
         <Constant headline="Language Requirements" />
+        <Collapsible collapsed={collapsed} align="top">
+          <Language />
+        </Collapsible>
       </TouchableOpacity>
-      <Collapsible collapsed={collapsed} align="top">
-        <Language />
-      </Collapsible>
 
       <TouchableOpacity onPress={toggleExpanded}>
         <Constant headline="Places to Study Native Language" />
