@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
     padding: 2,
     color: "black",
     fontWeight: "bold",
+    paddingLeft: 5,
     margin: 5,
     fontSize: 18,
     backgroundColor: "lightseagreen",
