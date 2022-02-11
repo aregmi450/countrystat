@@ -5,10 +5,10 @@ import CountryDetails from "../components/CountryDetails";
 import Search from "../components/SearchBar";
 
 const HomeScreen = () => {
-  // const tailwind = useTailwind();
+  const tailwind = useTailwind();
   return (
     <View style={styles.header}>
-      {/* <View style={tailwind("mt-10 p-15")}> */}
+      {/* // <View style={tailwind("mt-10 p-15")}> */}
       <Text style={styles.text}> GO ABROAD </Text>
       <Text style={styles.subText}>
         Choose the country of your dreams here ...

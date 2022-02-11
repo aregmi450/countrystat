@@ -18,8 +18,8 @@ const ChooseCountry: FC<CountryDetails> = ({ name, isoCode }) => {
         style={styles.card}
         onPress={() => navigation.navigate("Detail")}
       >
-        <CountryFlag isoCode={isoCode} size={25} />
-        <Text>{name}</Text>
+        <CountryFlag isoCode={isoCode} size={30} />
+        <Text style={styles.text}>{name}</Text>
       </TouchableOpacity>
     </View>
   );
@@ -29,6 +29,11 @@ const styles = StyleSheet.create({
   card: {
     alignItems: "flex-start",
     padding: 10,
+  },
+  text: {
+    fontSize: 20,
+    fontWeight: "700",
+    color: "teal",
   },
 });
 export default ChooseCountry;
