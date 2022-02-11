@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { View, StyleSheet } from "react-native";
 import { Searchbar } from "react-native-paper";
-import { black } from "react-native-paper/lib/typescript/styles/colors";
 
 export type query = string;
 const Search = () => {

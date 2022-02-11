@@ -1,6 +1,5 @@
-import React, { FC } from "react";
+import React from "react";
 import { View } from "react-native";
-import Constant from "./Constants";
 import EntryRequirement from "./EntryRequire";
 
 const Language = () => {

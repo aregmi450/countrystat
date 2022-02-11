@@ -26,19 +26,4 @@ const styles = StyleSheet.create({
   },
 });
 
-// export default Links;
-
-// export  LinkSection;
-
 export default Links;
-
-/* //   <Button
-        onPress={() =>
-          Linking.openURL(
-            "https://kathmandu.diplo.de/np-en/service/01-VisaEinreise/-/2225320"
-          )
-        }
-        title="German Embassy for Studying Visa"
-        color="teal"
-      /> */
-// }

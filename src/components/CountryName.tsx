@@ -1,12 +1,5 @@
 import React, { FC } from "react";
-import {
-  Text,
-  View,
-  StyleSheet,
-  TouchableOpacity,
-  FlatList,
-} from "react-native";
-import { useTailwind } from "tailwind-rn";
+import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
 import CountryFlag from "react-native-country-flag";
 import { useNavigation } from "@react-navigation/native";
 
