@@ -10,6 +10,10 @@ const LinkSection = () => {
         title="German Embassy Nepal"
       />
       <Links
+        url="http://noc.moest.gov.np/"
+        title="No Objection Certificate Creation"
+      />
+      <Links
         url="https://www.studying-in-germany.org/scholarships/"
         title="Scholarship Programs in Germany"
       />
