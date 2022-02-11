@@ -34,6 +34,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "700",
     color: "teal",
+    paddingTop: 5,
   },
 });
 export default ChooseCountry;
