@@ -21,7 +21,7 @@ const HomeScreen = () => {
 
 const styles = StyleSheet.create({
   header: {
-    marginTop: 10,
+    marginTop: 50,
     padding: 15,
   },
   text: {
