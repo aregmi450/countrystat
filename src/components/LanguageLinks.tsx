@@ -13,6 +13,7 @@ const LanguageLink = () => {
         url="https://www.edupark.com.np/german-language-courses"
         title="EduPark Nepal"
       />
+      <Links url="https://www.duolingo.com/" title="Duolingo" />
     </View>
   );
 };
