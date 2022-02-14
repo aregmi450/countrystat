@@ -1,3 +1,5 @@
+//links to the native language section are placed here
+
 import React from "react";
 import { View } from "react-native";
 import Links from "./Links";

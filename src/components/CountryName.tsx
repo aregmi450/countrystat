@@ -1,3 +1,5 @@
+// file for design of the home screen of the application
+
 import React, { FC } from "react";
 import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
 import CountryFlag from "react-native-country-flag";

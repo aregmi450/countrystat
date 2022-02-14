@@ -1,3 +1,5 @@
+//necessary links for student are placed here
+
 import React from "react";
 import { View } from "react-native";
 import Links from "./Links";

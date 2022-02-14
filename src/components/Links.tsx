@@ -1,3 +1,5 @@
+// overview of the links
+
 import React, { FC } from "react";
 import { Linking, Text, View, StyleSheet } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";

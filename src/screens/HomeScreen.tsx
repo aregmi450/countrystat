@@ -1,3 +1,5 @@
+//home screen of the application which is shown when the application first loads
+
 import React from "react";
 import { Text, View, StyleSheet } from "react-native";
 import { useTailwind } from "tailwind-rn";

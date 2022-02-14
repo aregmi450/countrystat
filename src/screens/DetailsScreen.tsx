@@ -1,3 +1,5 @@
+//the second screen of the application where the user gets navigated after clicking on the flag icon at the home page
+
 import React from "react";
 import { Dimensions, StyleSheet, ScrollView, Text } from "react-native";
 import CollapseSection from "../components/Collapsible";

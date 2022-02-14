@@ -1,3 +1,5 @@
+// language needed for the country are described here
+
 import React from "react";
 import { View } from "react-native";
 import EntryRequirement from "./EntryRequire";
