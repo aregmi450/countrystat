@@ -8,11 +8,13 @@ export type query = string;
 const Search = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
-  const onChangeSearch = (query) => setSearchQuery(query);
+  const onChangeSearch = (query: React.SetStateAction<string>) =>
+    setSearchQuery(query);
 
   return (
     <View style={styles.container}>
       <Searchbar
+        autoComplete={false}
         placeholder="Search your dream destination"
         onChangeText={onChangeSearch}
         value={searchQuery}
