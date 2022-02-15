@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   button: {
     fontWeight: "700",
     color: "teal",
-    padding: 3,
+    padding: 5,
     margin: 5,
   },
 });

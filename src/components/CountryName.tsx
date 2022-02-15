@@ -3,7 +3,8 @@
 import React, { FC } from "react";
 import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
 import CountryFlag from "react-native-country-flag";
-import { useNavigation } from "@react-navigation/native";
+import { ParamListBase, useNavigation } from "@react-navigation/native";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
 type CountryDetails = {
   name: string;
@@ -12,7 +13,7 @@ type CountryDetails = {
 
 const ChooseCountry: FC<CountryDetails> = ({ name, isoCode }) => {
   // const tailwind = useTailwind();
-  const navigation = useNavigation();
+  const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
 
   return (
     <View style={styles.card}>

@@ -6,6 +6,13 @@ import CountryDetails from "./src/components/CountryDetails";
 import EntryRequirement from "./src/components/EntryRequire";
 import DetailsScreen from "./src/screens/DetailsScreen";
 
+export type CreateStackParams = {
+  Details: Icode;
+};
+
+export interface Icode {
+  isoCode: string;
+}
 // move the stack
 const Stack = createStackNavigator();
 
