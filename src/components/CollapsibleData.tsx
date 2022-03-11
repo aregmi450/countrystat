@@ -18,7 +18,7 @@ const CollapseWindow: FC<Section> = ({ title, componentName }) => {
     <TouchableOpacity onPress={toggleExpanded}>
       <Text style={styles.textHeader}>
         {title}
-        <Entypo name="chevron-down" size={24} style={styles.icon} />
+        <Entypo name="chevron-thin-down" size={24} style={styles.icon} />
       </Text>
       <Collapsible collapsed={collapsed} align="top">
         {componentName}
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     color: "black",
   },
   icon: {
-    paddingLeft: 15,
+    paddingLeft: 20,
     alignItems: "flex-end",
   },
 });

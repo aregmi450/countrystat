@@ -6,9 +6,11 @@ import Language from "./Language";
 import LanguageLink from "./LanguageLinks";
 import CollapseWindow from "./CollapsibleData";
 import useGetLinkSection from "../hooks/useGetLinkSections";
+import useGetEntryDetails from "../hooks/useGetEntryData";
 
 const CollapseSection = ({ countryID }: { countryID: string }) => {
   const linkSections = useGetLinkSection(countryID);
+  const entryDetails = useGetEntryDetails();
 
   const countrySpecificData = [
     {
