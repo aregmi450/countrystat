@@ -11,7 +11,7 @@ const { width, height } = Dimensions.get("screen");
 function DetailsScreen({ route }: { route: any }) {
   const { countryID } = route.params;
 
-  const { data: countryData } = useGetLinkSection(countryID);
+  // const { data: countryData } = useGetLinkSection(countryID);
 
   // const {data:countryData} = useGetCountryDetail(countryId)
   /*
@@ -31,8 +31,8 @@ function DetailsScreen({ route }: { route: any }) {
     return (
       <ScrollView style={styles.container}>
         <Text style={styles.text}> GO ABROAD </Text>
-        <Language languageLinks={[]} />
-        {/* <CollapseSection /> */}
+        {/* <Language languageLinks={[]} /> */}
+        <CollapseSection countryId={"fr"} />
       </ScrollView>
     );
   } else {

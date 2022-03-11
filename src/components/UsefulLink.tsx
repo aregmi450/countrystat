@@ -10,7 +10,7 @@ interface UsefulLinkProps {
   usefulLinks: UsefulLink[];
 }
 
-const UsefulLink = ({ usefulLinks }: UsefulLinkProps) => {
+const LinkSection = ({ usefulLinks }: UsefulLinkProps) => {
   return (
     <View>
       {usefulLinks.map(({ url, title }) => {
@@ -20,4 +20,4 @@ const UsefulLink = ({ usefulLinks }: UsefulLinkProps) => {
   );
 };
 
-export default UsefulLink;
+export default LinkSection;
