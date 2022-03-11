@@ -3,7 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import HomeScreen from "./src/screens/HomeScreen";
 import CountryDetails from "./src/components/CountryDetails";
-import EntryRequirement from "./src/components/EntryRequire";
+import { EntryRequirement } from "./src/components/Requirement";
 import DetailsScreen from "./src/screens/DetailsScreen";
 
 export type CreateStackParams = {

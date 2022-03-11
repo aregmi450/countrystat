@@ -2,22 +2,37 @@
 
 import React from "react";
 import { View } from "react-native";
-import Links from "./Links";
+import { countriesData } from "../../const";
+import { NativeLanguageLink } from "../../interface";
+import { NativeLanguage } from "./Links";
 
-const LanguageLink = () => {
+interface LanguageLinkProps {
+  nativeLanguageLinks: NativeLanguageLink[];
+}
+const LanguageLink = ({ nativeLanguageLinks }: LanguageLinkProps) => {
   return (
     <View>
-      <Links
-        url="https://www.goethe-kathmandu.edu.np/"
-        title="Goethe Institute"
-      />
-      <Links
-        url="https://www.edupark.com.np/german-language-courses"
-        title="EduPark Nepal"
-      />
-      <Links url="https://www.duolingo.com/" title="Duolingo" />
+      {nativeLanguageLinks.map(({ url, instituteName }) => {
+        return (
+          <NativeLanguage
+            key={instituteName}
+            instituteName={instituteName}
+            url={url}
+          />
+        );
+      })}
     </View>
   );
 };
 
 export default LanguageLink;
+
+// <Links
+//       url="https://www.goethe-kathmandu.edu.np/"
+//       title="Goethe Institute"
+//     />
+//     <Links
+//       url="https://www.edupark.com.np/german-language-courses"
+//       title="EduPark Nepal"
+//     />
+//     <Links url="https://www.duolingo.com/" title="Duolingo" />

@@ -1,17 +1,14 @@
 import React, { FC, useState } from "react";
-import { TouchableOpacity, View, Text } from "react-native";
+import { TouchableOpacity, Text, StyleSheet } from "react-native";
 import Collapsible from "react-native-collapsible";
-import Constant from "./Constants";
+import { Entypo } from "@expo/vector-icons";
 
-type CollapsibleComponents = {
+interface Section {
+  title: string;
   componentName: React.ReactNode;
-  headline: string;
-};
+}
 
-const CollapseWindow: FC<CollapsibleComponents> = ({
-  componentName,
-  headline,
-}) => {
+const CollapseWindow: FC<Section> = ({ title, componentName }) => {
   const [collapsed, setCollapsed] = useState(true);
   const toggleExpanded = () => {
     // Toggling the state of single Collapsible
@@ -19,11 +16,35 @@ const CollapseWindow: FC<CollapsibleComponents> = ({
   };
   return (
     <TouchableOpacity onPress={toggleExpanded}>
-      <Constant headline={headline} />
+      <Text style={styles.textHeader}>
+        {title}
+        <Entypo name="chevron-down" size={24} style={styles.icon} />
+      </Text>
       <Collapsible collapsed={collapsed} align="top">
         {componentName}
       </Collapsible>
     </TouchableOpacity>
   );
 };
+
 export default CollapseWindow;
+
+const styles = StyleSheet.create({
+  textHeader: {
+    marginTop: 5,
+    padding: 5,
+    fontSize: 20,
+    color: "teal",
+    fontWeight: "700",
+  },
+  textdescription: {
+    marginTop: 5,
+    padding: 5,
+    fontSize: 18,
+    color: "black",
+  },
+  icon: {
+    paddingLeft: 15,
+    alignItems: "flex-end",
+  },
+});

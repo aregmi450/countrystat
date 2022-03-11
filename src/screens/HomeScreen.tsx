@@ -7,7 +7,6 @@ import CountryDetails from "../components/CountryDetails";
 import Search from "../components/SearchBar";
 
 const HomeScreen = () => {
-  const tailwind = useTailwind();
   return (
     <View style={styles.header}>
       {/* <View style={tailwind("m-50 p-15")}> */}

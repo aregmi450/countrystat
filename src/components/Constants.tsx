@@ -4,17 +4,17 @@ import { useTailwind } from "tailwind-rn";
 import { Entypo } from "@expo/vector-icons";
 
 type Topic = {
-  headline: string;
+  title: string;
 };
-const Constant: FC<Topic> = ({ headline }) => {
+const Constant: FC<Topic> = ({ title }) => {
   // const tailwind = useTailwind();
 
   return (
     <View style={styles.border}>
-      {/* <Text style={tailwind("p-2 text-white font-bold")}>{headline}</Text> */}
+      {/* <Text style={tailwind("p-2 text-white font-bold")}>{title}</Text> */}
 
       <Text style={styles.textStyle}>
-        {headline}
+        {title}
         <Entypo
           name="chevron-down"
           size={24}

@@ -6,14 +6,26 @@ import CollapseSection from "../components/Collapsible";
 
 const { width, height } = Dimensions.get("screen");
 
-const DetailsScreen = () => {
-  return (
-    <ScrollView style={styles.container}>
-      <Text style={styles.text}> GO ABROAD </Text>
-      <CollapseSection />
-    </ScrollView>
-  );
-};
+function DetailsScreen({ route }: { route: any }) {
+  const { countryID } = route.params;
+
+  if (countryID) {
+    return (
+      <ScrollView style={styles.container}>
+        <Text style={styles.text}> GO ABROAD </Text>
+        <CollapseSection />
+      </ScrollView>
+    );
+  } else {
+    return (
+      <ScrollView style={styles.container}>
+        <Text style={styles.error}>
+          Sorry, we do not have details for the chosen country.
+        </Text>
+      </ScrollView>
+    );
+  }
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -21,6 +33,13 @@ const styles = StyleSheet.create({
     width: width,
     height: height * 0.8,
     paddingBottom: 5,
+  },
+  error: {
+    fontSize: 24,
+    fontWeight: "bold",
+    color: "teal",
+    margin: 10,
+    justifyContent: "center",
   },
   text: {
     fontSize: 30,

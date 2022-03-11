@@ -6,12 +6,13 @@ import CountryFlag from "react-native-country-flag";
 import { ParamListBase, useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
-type CountryDetails = {
+export type CountryDetails = {
   name: string;
   isoCode: string;
+  countryID: string;
 };
 
-const ChooseCountry: FC<CountryDetails> = ({ name, isoCode }) => {
+const ChooseCountry: FC<CountryDetails> = ({ name, isoCode, countryID }) => {
   // const tailwind = useTailwind();
   const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
 
@@ -19,7 +20,7 @@ const ChooseCountry: FC<CountryDetails> = ({ name, isoCode }) => {
     <View style={styles.card}>
       <TouchableOpacity
         style={styles.card}
-        onPress={() => navigation.navigate("Detail")}
+        onPress={() => navigation.navigate("Detail", { countryID, isoCode })}
       >
         <CountryFlag isoCode={isoCode} size={30} />
         <Text style={styles.text}>{name}</Text>
