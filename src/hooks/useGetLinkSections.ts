@@ -1,6 +1,5 @@
-import {countriesData} from "../../const";
+import { countriesData } from "../../const";
 
-export default function useGetLinkSection(countryId: string){
-    return countriesData.find(country=>country.countryID === countryId)?.nativeLanguageLink
-
+export default function useGetLinkSection(countryID: string) {
+  return countriesData.find((countryID) => countryID?.nativeLanguageLink);
 }
