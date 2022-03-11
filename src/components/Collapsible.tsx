@@ -7,16 +7,13 @@ import LanguageLink from "./LanguageLinks";
 import CollapseWindow from "./CollapsibleData";
 import useGetLinkSection from "../hooks/useGetLinkSections";
 
-
-
-const CollapseSection = ({countryId}:{countryId: string}) => {
-
+const CollapseSection = ({ countryId }: { countryId: string }) => {
   const linkSections = useGetLinkSection(countryId);
 
   const countrySpecificData = [
     {
       title: "Entry Requirements",
-      componentName: <Details />,
+      componentName: <Details entryDetails={[]} />,
     },
     {
       title: "Useful Links for Students",
@@ -24,7 +21,7 @@ const CollapseSection = ({countryId}:{countryId: string}) => {
     },
     {
       title: "Language Requirements",
-      componentName: <Language languageRequireds={[]}/>,
+      componentName: <Language languageRequireds={[]} />,
     },
     {
       title: "Places to Study Native Language",

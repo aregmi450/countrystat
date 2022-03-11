@@ -2,7 +2,7 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import HomeScreen from "./src/screens/HomeScreen";
-import CountryDetails from "./src/components/CountryDetails";
+import CountryDetails from "./src/components/CountryList";
 import { EntryRequirement } from "./src/components/Requirement";
 import DetailsScreen from "./src/screens/DetailsScreen";
 
