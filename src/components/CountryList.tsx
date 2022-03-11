@@ -5,30 +5,7 @@ import ChooseCountry from "./CountryName";
 import { View } from "react-native";
 import { countriesData } from "../../const";
 
-// const countriesObj = [
-//   {
-//     name: "Germany",
-//     isoCode: "de",
-//     countryID: "de",
-//   },
-//   {
-//     name: "USA",
-//     isoCode: "us",
-//     countryID: "us",
-//   },
-//   {
-//     name: "Canada",
-//     isoCode: "ca",
-//     countryID: "cb",
-//   },
-//   {
-//     name: "Australia",
-//     isoCode: "au",
-//     countryID: "au",
-//   },
-// ];
-
-const CountryDetails = () => {
+const CountryList = () => {
   return (
     <View>
       {countriesData.map(({ countryName, isoCode, countryID }) => (
@@ -43,4 +20,4 @@ const CountryDetails = () => {
   );
 };
 
-export default CountryDetails;
+export default CountryList;

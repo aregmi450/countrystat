@@ -3,7 +3,7 @@
 import React from "react";
 import { Text, View, StyleSheet } from "react-native";
 import { useTailwind } from "tailwind-rn";
-import CountryDetails from "../components/CountryDetails";
+import CountryList from "../components/CountryList";
 import Search from "../components/SearchBar";
 
 const HomeScreen = () => {
@@ -16,13 +16,11 @@ const HomeScreen = () => {
       </Text>
 
       <Search />
-        {
-            /**
-             * FIXME If country lists is supposed to be rendered then similar naming convention should be made
-             * It could be <CountryList/>
-             */
-        }
-      <CountryDetails />
+      {/**
+       * FIXME If country lists is supposed to be rendered then similar naming convention should be made
+       * It could be <CountryList/>
+       */}
+      <CountryList />
     </View>
   );
 };
