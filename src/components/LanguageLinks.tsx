@@ -29,7 +29,7 @@ export default LanguageLink;
 
 // <Links
 //       url="https://www.goethe-kathmandu.edu.np/"
-//       title="Goethe Institute"
+//       title="APp version "
 //     />
 //     <Links
 //       url="https://www.edupark.com.np/german-language-courses"

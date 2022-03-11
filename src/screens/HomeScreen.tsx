@@ -14,7 +14,14 @@ const HomeScreen = () => {
       <Text style={styles.subText}>
         Choose the country of your dreams here ...
       </Text>
+
       <Search />
+        {
+            /**
+             * FIXME If country lists is supposed to be rendered then similar naming convention should be made
+             * It could be <CountryList/>
+             */
+        }
       <CountryDetails />
     </View>
   );

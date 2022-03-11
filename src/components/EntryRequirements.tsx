@@ -23,10 +23,10 @@ const DetailsObj = [
   },
 ];
 
-const Details = () => {
+const Details = ({entryDetails}:{entryDetails: any[]}) => {
   return (
     <View>
-      {countriesData.entryDetails.map(({ title, description }) => (
+      {entryDetails.map(({ title, description }) => (
         <EntryRequirement key={title} title={title} description={description} />
       ))}
     </View>
