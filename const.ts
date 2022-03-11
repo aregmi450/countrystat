@@ -51,10 +51,7 @@ export const countriesData: Data[] = [
   },
 ];
 
-
-
-
-
+// {
 // countryDetails: [
 //     {
 //       countryID: "fr",
@@ -85,7 +82,13 @@ export const countriesData: Data[] = [
 //       instituteName: "Alliance Francaise",
 //     },
 //   ],
-//   usefulLink:
+//   usefulLink: [
+//  {
+//         url: "https://np.ambafrance.org/-English-",
+//         title: "French Embassy Nepal",
+//       },
+// ]
+// }
 
 //   countryDetails: [
 //     {

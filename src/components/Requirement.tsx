@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Text, View, StyleSheet } from "react-native";
-import { EntryDetails, LanguageType } from "../../interface";
+import { EntryDetails, LanguageDetails } from "../../interface";
 
 const EntryRequirement: FC<EntryDetails> = ({ title, description }) => {
   return (
@@ -11,7 +11,7 @@ const EntryRequirement: FC<EntryDetails> = ({ title, description }) => {
   );
 };
 
-const LanguageRequirement: FC<LanguageType> = ({
+const LanguageRequirement: FC<LanguageDetails> = ({
   languagetype,
   languageDescription,
 }) => {

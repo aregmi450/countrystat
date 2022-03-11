@@ -21,7 +21,7 @@ const CollapseSection = ({ countryId }: { countryId: string }) => {
     },
     {
       title: "Language Requirements",
-      componentName: <Language languageRequireds={[]} />,
+      componentName: <Language languageLinks={[]} />,
     },
     {
       title: "Places to Study Native Language",

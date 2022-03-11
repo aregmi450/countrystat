@@ -4,7 +4,7 @@ export interface Data {
   countryName: string;
   entryDetails: EntryDetails[];
   usefulLink: UsefulLink[];
-  languageType: LanguageType[];
+  languageType: LanguageDetails[];
   nativeLanguageLink: NativeLanguageLink[];
 }
 
@@ -18,7 +18,7 @@ export interface UsefulLink {
   title: string;
 }
 
-export interface LanguageType {
+export interface LanguageDetails {
   languagetype: string;
   languageDescription: string;
 }
