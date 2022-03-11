@@ -3,6 +3,7 @@
 import React from "react";
 import { Dimensions, StyleSheet, ScrollView, Text } from "react-native";
 import CollapseSection from "../components/Collapsible";
+import Language from "../components/Language";
 import useGetLinkSection from "../hooks/useGetLinkSections";
 
 const { width, height } = Dimensions.get("screen");
@@ -10,7 +11,7 @@ const { width, height } = Dimensions.get("screen");
 function DetailsScreen({ route }: { route: any }) {
   const { countryID } = route.params;
 
-  const {data: countryData} = useGetLinkSection(countryID)
+  const { data: countryData } = useGetLinkSection(countryID);
 
   // const {data:countryData} = useGetCountryDetail(countryId)
   /*
@@ -30,7 +31,8 @@ function DetailsScreen({ route }: { route: any }) {
     return (
       <ScrollView style={styles.container}>
         <Text style={styles.text}> GO ABROAD </Text>
-        <CollapseSection />
+        <Language languageLinks={[]} />
+        {/* <CollapseSection /> */}
       </ScrollView>
     );
   } else {

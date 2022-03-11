@@ -12,7 +12,7 @@ export type CountryDetails = {
   countryID: string;
 };
 
-const ChooseCountry: FC<CountryDetails> = ({ name, isoCode, countryID }) => {
+const CountryInfo: FC<CountryDetails> = ({ name, isoCode, countryID }) => {
   // const tailwind = useTailwind();
   const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
 
@@ -41,4 +41,4 @@ const styles = StyleSheet.create({
     paddingTop: 5,
   },
 });
-export default ChooseCountry;
+export default CountryInfo;

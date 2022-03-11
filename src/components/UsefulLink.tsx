@@ -2,42 +2,22 @@
 
 import React from "react";
 import { View } from "react-native";
-import { countriesData } from "../../const";
+import { UsefulLink } from "../../interface";
 import { Link } from "./Links";
 
 // this contains all the render process for all the necessary links to the student
+interface UsefulLinkProps {
+  usefulLinks: UsefulLink[];
+}
 
-const LinkSection = ({}) => {
+const UsefulLink = ({ usefulLinks }: UsefulLinkProps) => {
   return (
     <View>
-      {countriesData.usefulLink.map(({ url, title }) => {
+      {usefulLinks.map(({ url, title }) => {
         return <Link key={title} title={title} url={url} />;
       })}
     </View>
   );
 };
 
-export default LinkSection;
-
-// const LinkSection = () => {
-//   return (
-//     <View>
-//       <Link
-//         url="https=//kathmandu.diplo.de/np-en/service/01-VisaEinreise/-/2225320"
-//         instituteName="German Embassy Nepal"
-//       />
-//       <Link
-//         url="http=//noc.moest.gov.np/"
-//         instituteName="No Objection Certificate Creation"
-//       />
-//       <Link
-//         url="https=//www.studying-in-germany.org/scholarships/"
-//         instituteName="Studying in Germany "
-//       />
-//       <Link
-//         url="https=//www.studying-in-germany.org/"
-//         instituteName="Studying in Germany"
-//       />
-//     </View>
-//   );
-// };
+export default UsefulLink;

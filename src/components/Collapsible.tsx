@@ -6,6 +6,7 @@ import Language from "./Language";
 import LanguageLink from "./LanguageLinks";
 import CollapseWindow from "./CollapsibleData";
 import useGetLinkSection from "../hooks/useGetLinkSections";
+import UsefulLink from "./UsefulLink";
 
 const CollapseSection = ({ countryId }: { countryId: string }) => {
   const linkSections = useGetLinkSection(countryId);
@@ -17,7 +18,7 @@ const CollapseSection = ({ countryId }: { countryId: string }) => {
     },
     {
       title: "Useful Links for Students",
-      componentName: <LinkSection />,
+      componentName: <UsefulLink usefulLinks={[]} />,
     },
     {
       title: "Language Requirements",
