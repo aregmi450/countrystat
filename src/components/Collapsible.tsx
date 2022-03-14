@@ -8,9 +8,8 @@ import CollapseWindow from "./CollapsibleData";
 import useGetLinkSection from "../hooks/useGetLinkSections";
 import useGetEntryDetails from "../hooks/useGetEntryData";
 
-const CollapseSection = ({ countryID }: { countryID: string }) => {
-  const linkSections = useGetLinkSection(countryID);
-  const entryDetails = useGetEntryDetails();
+const CollapseSection = ({}: {}) => {
+  const usefulLinks = useGetLinkSection;
 
   const countrySpecificData = [
     {
