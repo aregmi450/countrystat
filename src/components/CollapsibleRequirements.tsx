@@ -2,13 +2,9 @@ import React, { FC, useState } from "react";
 import { TouchableOpacity, Text, StyleSheet } from "react-native";
 import Collapsible from "react-native-collapsible";
 import { Entypo } from "@expo/vector-icons";
+import { CollapsibleLink } from "../../interface";
 
-interface Section {
-  title: string;
-  componentName: React.ReactNode;
-}
-
-const CollapseWindow: FC<Section> = ({ title, componentName }) => {
+const CollapseWindow: FC<CollapsibleLink> = ({ title, componentName }) => {
   const [collapsed, setCollapsed] = useState(true);
   const toggleExpanded = () => {
     // Toggling the state of single Collapsible

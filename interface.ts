@@ -33,3 +33,8 @@ export interface NativeLanguageLink {
   url: string;
   instituteName: string;
 }
+
+export interface CollapsibleLink {
+  title: string;
+  componentName: React.ReactNode;
+}

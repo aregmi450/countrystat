@@ -10,7 +10,7 @@ import useGetEntryDetails from "../hooks/useGetEntryData";
 
 //this component shows the detailed information about the section pressed by the user
 
-const DetailedInformation = ({}: {}) => {
+const DetailedInformation = () => {
   const entryData = useGetEntryDetails;
   const countrySpecificData = [
     {
