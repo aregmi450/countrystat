@@ -8,6 +8,12 @@ export interface Data {
   nativeLanguageLink: NativeLanguageLink[];
 }
 
+export interface CountryDetails {
+  name: string;
+  isoCode: string;
+  countryID: string;
+}
+
 export interface EntryDetails {
   title: string;
   description: string;

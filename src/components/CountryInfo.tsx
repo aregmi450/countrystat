@@ -5,12 +5,7 @@ import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
 import CountryFlag from "react-native-country-flag";
 import { ParamListBase, useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-
-export type CountryDetails = {
-  name: string;
-  isoCode: string;
-  countryID: string;
-};
+import { CountryDetails } from "../../interface";
 
 const CountryInfo: FC<CountryDetails> = ({ name, isoCode, countryID }) => {
   // const tailwind = useTailwind();
