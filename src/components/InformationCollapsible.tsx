@@ -4,12 +4,12 @@ import Details from "./EntryRequirements";
 import LinkSection from "./UsefulLink";
 import Language from "./Language";
 import LanguageLink from "./LanguageLinks";
-import CollapseWindow from "./CollapsibleData";
+import CollapseWindow from "./CollapsibleRequirements";
 import useGetLinkSection from "../hooks/useGetLinkSections";
 import useGetEntryDetails from "../hooks/useGetEntryData";
 
-const CollapseSection = ({}: {}) => {
-  const usefulLinks = useGetLinkSection;
+const DetailedInformation = ({}: {}) => {
+  const entryData = useGetEntryDetails;
 
   const countrySpecificData = [
     {
@@ -43,4 +43,4 @@ const CollapseSection = ({}: {}) => {
   );
 };
 
-export default CollapseSection;
+export default DetailedInformation;

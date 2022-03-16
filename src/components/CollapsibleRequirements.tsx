@@ -18,10 +18,11 @@ const CollapseWindow: FC<Section> = ({ title, componentName }) => {
     <TouchableOpacity onPress={toggleExpanded}>
       <Text style={styles.textHeader}>
         {title}
-        <Entypo name="chevron-thin-down" size={24} style={styles.icon} />
+        <Entypo name="chevron-down" size={24} style={styles.icon} />
       </Text>
       <Collapsible collapsed={collapsed} align="top">
         {componentName}
+        <Text>You have pressed the button. </Text>
       </Collapsible>
     </TouchableOpacity>
   );

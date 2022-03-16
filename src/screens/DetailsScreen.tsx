@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Dimensions, StyleSheet, ScrollView, Text } from "react-native";
-import CollapseSection from "../components/Collapsible";
+import DetailedInformation from "../components/InformationCollapsible";
 import useGetLinkSection from "../hooks/useGetLinkSections";
 
 const { width, height } = Dimensions.get("screen");
@@ -30,7 +30,7 @@ function DetailsScreen({ route }: { route: any }) {
     return (
       <ScrollView style={styles.container}>
         <Text style={styles.text}> GO ABROAD </Text>
-        <CollapseSection />
+        <DetailedInformation />
       </ScrollView>
     );
   } else {
