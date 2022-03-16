@@ -1,5 +1,3 @@
-// esma section one ko data pass vairako cha
-
 import React from "react";
 import { EntryRequirement } from "./Requirement";
 import { View } from "react-native";
