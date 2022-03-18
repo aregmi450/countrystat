@@ -5,9 +5,7 @@ import LinkSection from "./UsefulLink";
 import Language from "./Language";
 import LanguageLink from "./LanguageLinks";
 import CollapseWindow from "./CollapsibleRequirements";
-import useGetLinkSection from "../hooks/useGetLinkSections";
-import useGetEntryDetails from "../hooks/useGetEntryData";
-import { EntryDetails, UsefulLink } from "../../interface";
+import useGetEntryDetails from "../hooks/useDetails";
 
 //this component shows the detailed information about the section pressed by the user
 

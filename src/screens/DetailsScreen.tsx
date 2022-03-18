@@ -3,7 +3,6 @@
 import React from "react";
 import { Dimensions, StyleSheet, ScrollView, Text } from "react-native";
 import DetailedInformation from "../components/InformationCollapsible";
-import useGetLinkSection from "../hooks/useGetLinkSections";
 
 const { width, height } = Dimensions.get("screen");
 
