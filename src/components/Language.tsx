@@ -6,13 +6,13 @@ import { LanguageDetails } from "../../interface";
 import { LanguageRequirement } from "./Requirement";
 
 interface LanguageProps {
-  languageLinks: LanguageDetails[];
+  languageLinks?: LanguageDetails[];
 }
 
 const Language = ({ languageLinks }: LanguageProps) => {
   return (
     <View>
-      {languageLinks.map(({ languagetype, languageDescription }) => {
+      {languageLinks?.map(({ languagetype, languageDescription }) => {
         return (
           <LanguageRequirement
             key={languagetype}

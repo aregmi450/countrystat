@@ -7,13 +7,13 @@ import { Link } from "./Links";
 
 // this contains all the render process for all the necessary links to the student
 interface UsefulLinkProps {
-  usefulLinks: UsefulLink[];
+  usefulLinks?: UsefulLink[];
 }
 
 const LinkSection = ({ usefulLinks }: UsefulLinkProps) => {
   return (
     <View>
-      {usefulLinks.map(({ url, title }) => {
+      {usefulLinks?.map(({ url, title }) => {
         return <Link key={title} title={title} url={url} />;
       })}
     </View>

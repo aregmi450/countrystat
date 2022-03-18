@@ -18,7 +18,6 @@ const CollapseWindow: FC<CollapsibleLink> = ({ title, componentName }) => {
       </Text>
       <Collapsible collapsed={collapsed} align="top">
         {componentName}
-        <Text>You have pressed the button. </Text>
       </Collapsible>
     </TouchableOpacity>
   );

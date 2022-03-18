@@ -30,7 +30,7 @@ function DetailsScreen({ route }: { route: any }) {
     return (
       <ScrollView style={styles.container}>
         <Text style={styles.text}> GO ABROAD </Text>
-        <DetailedInformation />
+        <DetailedInformation countryID={countryID as string} />
       </ScrollView>
     );
   } else {

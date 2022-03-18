@@ -6,12 +6,12 @@ import { NativeLanguageLink } from "../../interface";
 import { NativeLanguage } from "./Links";
 
 interface LanguageLinkProps {
-  nativeLanguageLinks: NativeLanguageLink[];
+  nativeLanguageLinks?: NativeLanguageLink[];
 }
 const LanguageLink = ({ nativeLanguageLinks }: LanguageLinkProps) => {
   return (
     <View>
-      {nativeLanguageLinks.map(({ url, instituteName }) => {
+      {nativeLanguageLinks?.map(({ url, instituteName }) => {
         return (
           <NativeLanguage
             key={instituteName}

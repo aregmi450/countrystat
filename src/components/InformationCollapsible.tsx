@@ -7,27 +7,30 @@ import LanguageLink from "./LanguageLinks";
 import CollapseWindow from "./CollapsibleRequirements";
 import useGetLinkSection from "../hooks/useGetLinkSections";
 import useGetEntryDetails from "../hooks/useGetEntryData";
+import { EntryDetails, UsefulLink } from "../../interface";
 
 //this component shows the detailed information about the section pressed by the user
 
-const DetailedInformation = () => {
-  const entryData = useGetEntryDetails;
+const DetailedInformation = ({ countryID }: { countryID: string }) => {
+  const country = useGetEntryDetails(countryID);
   const countrySpecificData = [
     {
       title: "Entry Requirements",
-      componentName: <Details entryDetails={[]} />,
+      componentName: <Details entryDetails={country?.entryDetails ?? []} />,
     },
     {
       title: "Useful Links for Students",
-      componentName: <LinkSection usefulLinks={[]} />,
+      componentName: <LinkSection usefulLinks={country?.usefulLink ?? []} />,
     },
     {
       title: "Language Requirements",
-      componentName: <Language languageLinks={[]} />,
+      componentName: <Language languageLinks={country?.languageType ?? []} />,
     },
     {
       title: "Places to Study Native Language",
-      componentName: <LanguageLink nativeLanguageLinks={[]} />,
+      componentName: (
+        <LanguageLink nativeLanguageLinks={country?.nativeLanguageLink ?? []} />
+      ),
     },
   ];
 

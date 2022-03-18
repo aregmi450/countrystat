@@ -1,5 +1,7 @@
 import { countriesData } from "../../const";
 
-export default function useGetEntryDetails() {
-  return countriesData.find((countryID) => countryID.entryDetails);
+export default function useGetEntryDetails(countryID: string) {
+  return countriesData.find(
+    ({ countryID: _countryID }) => _countryID === countryID
+  );
 }

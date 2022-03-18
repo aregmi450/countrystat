@@ -4,13 +4,13 @@ import { View } from "react-native";
 import { EntryDetails } from "../../interface";
 
 interface EntryDetailsProp {
-  entryDetails: EntryDetails[];
+  entryDetails?: EntryDetails[];
 }
 
 const Details = ({ entryDetails }: EntryDetailsProp) => {
   return (
     <View>
-      {entryDetails.map(({ title, description }) => (
+      {entryDetails?.map(({ title, description }) => (
         <EntryRequirement key={title} title={title} description={description} />
       ))}
     </View>
